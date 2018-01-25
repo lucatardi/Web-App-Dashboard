@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  border: blue 2px solid;
 }
 
 header {
@@ -8,6 +7,7 @@ header {
   padding: 0 20px;
   align-items: center;
   justify-content: space-between;
+  background-color: #8585e0;
 }
 
 .header-menu {
@@ -16,18 +16,50 @@ header {
 }
 
 h1 {
-  color: red;
+  color: white;
 }
 
 .avatar-user {
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
+  padding: 20px;
 }
 
 .icon-navigation {
-  fill: black;
-  width: 30px;
-  height: 30px;
-  border: 2px solid black;
+  fill: white;
+  width: 55px;
+  height: 55px;
+  padding-right: 30px;
+  border-right: 1px solid blue;
+}
+
+.name-user {
+  color: white;
+  font-weight: 100;
+}
+
+span {
+  font-weight: 100;
+  font-size: 19px;
+}
+
+.side-menu {
+  background-color: #47476b;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.icon-side {
+  width: 70px;
+  height: 70px;
+  padding: 15px 10px;
+  margin: 10px 0;
+  fill: grey;
+}
+
+.icon-side:hover {
+  border-left: 2px green solid;
+  fill: white;
 }
