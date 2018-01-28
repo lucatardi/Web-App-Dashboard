@@ -69,6 +69,21 @@
           <h2 class="label-title"> Dashboard </h2>
           <input type="text" class="search" />
         </div> <!-- label-page -->
+        <div class="new-div">
+          <h5 class="title-section"> Traffic </h5>
+          <canvas id="webTraffic" width="400" height="200"></canvas>
+        </div> <!-- New Div -->
+        <div class="new-div">
+          <h5 class="title-section"> Daily Traffic </h5>
+          <canvas id="dailyTraffic" width="350" height="200"></canvas>
+        </div> <!-- New Div -->
+        <div class="new-div">
+          <h5 class="title-section"> Mobile Users </h5>
+          <canvas id="mobileUsers" width="350" height="200"></canvas>
+        </div> <!-- New Div -->
+
+
+
         <div class="social-stats">
           <h5 class="title-section"> Social stats </h5>
           <div class="social">
@@ -117,7 +132,131 @@
             <p class="social-value"> 2,530 </p>
           </div> <!-- social -->
         </div> <!-- social-stats -->
+        <div class="new-div">
+          <h5 class="title-section"> New Members </h5>
+          <ul class="list-new-members">
+            <li>
+              <div class="pic-data-member">
+                <img src="photos/first-user.jpg" alt="avatar" class="avatar-user">
+                <div class="data-member">
+                  <h6 class="name-member"> Victoria Chambers </h6>
+                  <p class="mail"> victoria.chambers80@example.com </p>
+                </div> <!-- data member -->
+              </div> <!-- pic data member -->
+              <p class="date"> 10/15/15 </p>
+            </li>
+            <li>
+              <div class="pic-data-member">
+                <img src="photos/first-user.jpg" alt="avatar" class="avatar-user">
+                <div class="data-member">
+                  <h6 class="name-member"> Dale Byrd </h6>
+                  <p class="mail"> dale.byrd52@example.com </p>
+                </div> <!-- data member -->
+              </div> <!-- pic data member -->
+              <p class="date"> 10/15/15 </p>
+            </li>
+            <li>
+              <div class="pic-data-member">
+                <img src="photos/first-user.jpg" alt="avatar" class="avatar-user">
+                <div class="data-member">
+                  <h6 class="name-member"> Dawn Wood </h6>
+                  <p class="mail"> dawn.wood16@example.com </p>
+                </div> <!-- data member -->
+              </div> <!-- pic data member -->
+              <p class="date"> 10/15/15 </p>
+            </li>
+            <li>
+              <div class="pic-data-member">
+                <img src="photos/first-user.jpg" alt="avatar" class="avatar-user">
+                <div class="data-member">
+                  <h6 class="name-member"> Dan Oliver </h6>
+                  <p class="mail"> dan.oliver82@example.com </p>
+                </div> <!-- data member -->
+              </div> <!-- pic data member -->
+              <p class="date"> 10/15/15 </p>
+            </li>
+          </ul>
+        </div> <!-- New Members -->
+        <div class="new-div">
+          <h5 class="title-section"> Recent Activity </h5>
+          <ul class="list-new-members">
+            <li>
+              <div class="pic-data-member">
+                <img src="photos/first-user.jpg" alt="avatar" class="avatar-user">
+                <div class="data-member">
+                  <h6 class="name-member"> Victoria Chambers commented on YourApp's SEO Tips </h6>
+                  <p class="time-ago"> 4 hours ago </p>
+                </div> <!-- data member -->
+              </div> <!-- pic data member -->
+              <p class="arrow"> > </p>
+            </li>
+            <li>
+              <div class="pic-data-member">
+                <img src="photos/first-user.jpg" alt="avatar" class="avatar-user">
+                <div class="data-member">
+                  <h6 class="name-member"> Dale Byrd like the post Facebook's Changes for 2016 </h6>
+                  <p class="time-ago"> 5 hours ago </p>
+                </div> <!-- data member -->
+              </div> <!-- pic data member -->
+              <p class="arrow"> > </p>
+            </li>
+            <li>
+              <div class="pic-data-member">
+                <img src="photos/first-user.jpg" alt="avatar" class="avatar-user">
+                <div class="data-member">
+                  <h6 class="name-member"> Dawn Wood commented on Facebook's Changes for 2016 </h6>
+                  <p class="time-ago"> 5 hours ago </p>
+                </div> <!-- data member -->
+              </div> <!-- pic data member -->
+              <p class="arrow"> > </p>
+            </li>
+            <li>
+              <div class="pic-data-member">
+                <img src="photos/first-user.jpg" alt="avatar" class="avatar-user">
+                <div class="data-member">
+                  <h6 class="name-member"> Dan Oliver posted on YourApp's SEO Tips</h6>
+                  <p class="time-ago"> 1 day ago </p>
+                </div> <!-- data member -->
+              </div> <!-- pic data member -->
+              <p class="arrow"> > </p>
+            </li>
+          </ul>
+        </div> <!-- Recent Activity -->
+        <div class="new-div">
+          <h5 class="title-section"> Massage User </h5>
+          <input type="text" class="user-search" />
+          <textarea placeholder="Message for User" class="user-message"> </textarea>
+          <button type="button" class="action-button"> SEND </button>
+        </div> <!-- Massage User -->
+        <div class="new-div">
+          <h5 class="title-section"> Settings </h5>
+          <div class="option">
+            <h6 class="name-member"> Send E-mail Notifications </h6>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div> <!-- Option -->
+          <div class="option">
+            <h6 class="name-member"> Set Profile to Public </h6>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div> <!-- Option -->
+          <select>
+            <option value="utc"> UTC </option>
+            <option value="utc+1"> UTC +1 </option>
+            <option value="utc+2"> UTC +2 </option>
+          </select>
+          <div class="buttons-div">
+          <button type="button" class="action-button"> SAVE </button>
+          <button type="button" class="negative-button"> CANCEL </button>
+          </div>
+        </div> <!-- Settings -->
       </div> <!-- dashboard -->
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"> </script>
+    <script src="js/app.js"> </script>
   </body>
 </html>
