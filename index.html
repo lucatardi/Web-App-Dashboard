@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <title>  </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
   </head>
 
   <body>
     <header>
 
-      <h1 class="name-app"> Your<span>App<!-- &#8482 --></span></h1>
+      <h1 class="name-app"> Your<spam class="reduce">App<!-- &#8482 --></spam></h1>
 
       <div class="header-menu">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 32 32" class="icon-navigation">
@@ -20,7 +20,7 @@
         			c-1.3,0-2.4-0.8-2.8-2h5.6C16.4,27.2,15.3,28,14,28z M3,24l3-6v-8c0-4.4,3.6-8,8-8s8,3.6,8,8v8l3,6H3z"/>
         </svg>
 
-        <img src="photos/first-user.jpg" alt="avatar" class="avatar-user">
+        <img src="photos/first-user.jpg" alt="avatar" class="avatar-user profile">
 
         <h4 class="name-user"> Luca Tardito </h4>
       </div> <!-- header-menu -->
@@ -67,24 +67,35 @@
       <div class="dashboard">
         <div class="label-page">
           <h2 class="label-title"> Dashboard </h2>
-          <input type="text" class="search" />
+          <input type="text" class="search" placeholder="Search">
         </div> <!-- label-page -->
+        <div class="alert">
+          <h6> Alert Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh urtlicies vehicula ut id elit. Curabitur blandid tempus portittur. </h6>
+          <button type="button" id="x-button"> X </button>
+        </div> <!-- alert -->
         <div class="new-div">
-          <h5 class="title-section"> Traffic </h5>
-          <canvas id="webTraffic" width="400" height="200"></canvas>
+          <div class="option-bar">
+            <h5 class="title-section"> Traffic </h5>
+            <ul class="times">
+              <li class="name-member"> Hourly </li>
+              <li class="name-member"> Daily </li>
+              <li class="name-member"> Weekly </li>
+              <li class="name-member"> Monthly </li>
+            </ul>
+          </div> <!-- Option Bar -->
+          <canvas id="webTraffic" width="700" height="200"></canvas>
         </div> <!-- New Div -->
-        <div class="new-div">
-          <h5 class="title-section"> Daily Traffic </h5>
-          <canvas id="dailyTraffic" width="350" height="200"></canvas>
-        </div> <!-- New Div -->
-        <div class="new-div">
-          <h5 class="title-section"> Mobile Users </h5>
-          <canvas id="mobileUsers" width="350" height="200"></canvas>
-        </div> <!-- New Div -->
-
-
-
-        <div class="social-stats">
+        <div class="two-canvas">
+          <div class="new-div">
+            <h5 class="title-section"> Daily Traffic </h5>
+            <canvas id="dailyTraffic" width="420" height="200"></canvas>
+          </div> <!-- New Div -->
+          <div class="new-div">
+            <h5 class="title-section"> Mobile Users </h5>
+            <canvas id="mobileUsers" width="420" height="200"></canvas>
+          </div> <!-- New Div -->
+      </div> <!-- Two Canvas -->
+        <div class="new-div social-div">
           <h5 class="title-section"> Social stats </h5>
           <div class="social">
             <div class="icon-container">
@@ -96,16 +107,20 @@
                 	c0-0.3,0-0.6,0-0.8C30,5.6,31.1,4.4,32,3.1z"/>
               </svg>
             </div> <!-- icon-container -->
-            <h5 class="social-name"> Twitter </h5>
-            <p class="social-value"> 10,345 </p>
+            <div class="container-column">
+              <h5 class="social-name"> Twitter </h5>
+              <p class="social-value"> 10,345 </p>
+            </div>  <!-- container column -->
           </div> <!-- social -->
           <div class="social">
             <div class="icon-container">
               <svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon-social">
               <path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/></svg>
             </div> <!-- icon-container -->
-            <h5 class="social-name"> Facebook </h5>
-            <p class="social-value"> 8,739 </p>
+            <div class="container-column">
+              <h5 class="social-name"> Facebook </h5>
+              <p class="social-value"> 8,739 </p>
+            </div>  <!-- container column -->
           </div> <!-- social -->
           <div class="social">
             <div class="icon-container">
@@ -128,16 +143,19 @@
                 	h-4.9v4.9h-2.5V7.4h-4.9V4.9h4.9V0h2.5v4.9H32.8z"/>
               </svg>
             </div> <!-- icon-container -->
-            <h5 class="social-name"> Google+ </h5>
-            <p class="social-value"> 2,530 </p>
+            <div class="container-column">
+              <h5 class="social-name"> Google+ </h5>
+              <p class="social-value"> 2,530 </p>
+            </div>  <!-- container column -->
           </div> <!-- social -->
-        </div> <!-- social-stats -->
-        <div class="new-div">
+        </div> <!-- new div (social-stats) -->
+        <div class="four-divs-container">
+        <div class="new-div four-div">
           <h5 class="title-section"> New Members </h5>
           <ul class="list-new-members">
             <li>
               <div class="pic-data-member">
-                <img src="photos/first-user.jpg" alt="avatar" class="avatar-user">
+                <img src="photos/second-user.jpg" alt="avatar" class="avatar-user">
                 <div class="data-member">
                   <h6 class="name-member"> Victoria Chambers </h6>
                   <p class="mail"> victoria.chambers80@example.com </p>
@@ -147,7 +165,7 @@
             </li>
             <li>
               <div class="pic-data-member">
-                <img src="photos/first-user.jpg" alt="avatar" class="avatar-user">
+                <img src="photos/fourth-user.jpg" alt="avatar" class="avatar-user">
                 <div class="data-member">
                   <h6 class="name-member"> Dale Byrd </h6>
                   <p class="mail"> dale.byrd52@example.com </p>
@@ -157,7 +175,7 @@
             </li>
             <li>
               <div class="pic-data-member">
-                <img src="photos/first-user.jpg" alt="avatar" class="avatar-user">
+                <img src="photos/third-user.jpg" alt="avatar" class="avatar-user">
                 <div class="data-member">
                   <h6 class="name-member"> Dawn Wood </h6>
                   <p class="mail"> dawn.wood16@example.com </p>
@@ -167,7 +185,7 @@
             </li>
             <li>
               <div class="pic-data-member">
-                <img src="photos/first-user.jpg" alt="avatar" class="avatar-user">
+                <img src="photos/fifth-user.jpg" alt="avatar" class="avatar-user">
                 <div class="data-member">
                   <h6 class="name-member"> Dan Oliver </h6>
                   <p class="mail"> dan.oliver82@example.com </p>
@@ -177,12 +195,12 @@
             </li>
           </ul>
         </div> <!-- New Members -->
-        <div class="new-div">
+        <div class="new-div four-div">
           <h5 class="title-section"> Recent Activity </h5>
           <ul class="list-new-members">
             <li>
               <div class="pic-data-member">
-                <img src="photos/first-user.jpg" alt="avatar" class="avatar-user">
+                <img src="photos/second-user.jpg" alt="avatar" class="avatar-user">
                 <div class="data-member">
                   <h6 class="name-member"> Victoria Chambers commented on YourApp's SEO Tips </h6>
                   <p class="time-ago"> 4 hours ago </p>
@@ -192,7 +210,7 @@
             </li>
             <li>
               <div class="pic-data-member">
-                <img src="photos/first-user.jpg" alt="avatar" class="avatar-user">
+                <img src="photos/fourth-user.jpg" alt="avatar" class="avatar-user">
                 <div class="data-member">
                   <h6 class="name-member"> Dale Byrd like the post Facebook's Changes for 2016 </h6>
                   <p class="time-ago"> 5 hours ago </p>
@@ -202,7 +220,7 @@
             </li>
             <li>
               <div class="pic-data-member">
-                <img src="photos/first-user.jpg" alt="avatar" class="avatar-user">
+                <img src="photos/third-user.jpg" alt="avatar" class="avatar-user">
                 <div class="data-member">
                   <h6 class="name-member"> Dawn Wood commented on Facebook's Changes for 2016 </h6>
                   <p class="time-ago"> 5 hours ago </p>
@@ -212,7 +230,7 @@
             </li>
             <li>
               <div class="pic-data-member">
-                <img src="photos/first-user.jpg" alt="avatar" class="avatar-user">
+                <img src="photos/fifth-user.jpg" alt="avatar" class="avatar-user">
                 <div class="data-member">
                   <h6 class="name-member"> Dan Oliver posted on YourApp's SEO Tips</h6>
                   <p class="time-ago"> 1 day ago </p>
@@ -222,13 +240,15 @@
             </li>
           </ul>
         </div> <!-- Recent Activity -->
-        <div class="new-div">
-          <h5 class="title-section"> Massage User </h5>
-          <input type="text" class="user-search" />
-          <textarea placeholder="Message for User" class="user-message"> </textarea>
-          <button type="button" class="action-button"> SEND </button>
+        </div> <!-- four divs container -->
+        <div class="four-divs-container">
+        <div class="new-div four-div">
+          <h5 class="title-section" id="massage-user"> Massage User </h5>
+          <input type="text" class="user-search" placeholder="Search for Users">
+          <textarea class="user-message" placeholder="Message for User"></textarea>
+          <button type="button" class="action-button" id="submit"> SEND </button>
         </div> <!-- Massage User -->
-        <div class="new-div">
+        <div class="new-div four-div">
           <h5 class="title-section"> Settings </h5>
           <div class="option">
             <h6 class="name-member"> Send E-mail Notifications </h6>
@@ -238,13 +258,14 @@
             </label>
           </div> <!-- Option -->
           <div class="option">
-            <h6 class="name-member"> Set Profile to Public </h6>
+            <h6 class="name-member" id="trick"> Set Profile to Public </h6>
             <label class="switch">
               <input type="checkbox">
               <span class="slider round"></span>
             </label>
           </div> <!-- Option -->
           <select>
+            <option value="select" disabled selected> Select Timezone </option>
             <option value="utc"> UTC </option>
             <option value="utc+1"> UTC +1 </option>
             <option value="utc+2"> UTC +2 </option>
@@ -254,9 +275,11 @@
           <button type="button" class="negative-button"> CANCEL </button>
           </div>
         </div> <!-- Settings -->
+      </div> <!-- four divs container -->
       </div> <!-- dashboard -->
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/app.js"> </script>
   </body>
 </html>

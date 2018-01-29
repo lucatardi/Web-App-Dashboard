@@ -37,6 +37,7 @@ const webTraffic = new Chart (document.getElementById("webTraffic"), {
        label: "visites",
        data: [75, 100, 175, 125, 225, 200, 100],
        backgroundColor: "rgb(133, 133, 224)",
+       radius: 6,
      }]
    },
    options: {
@@ -63,5 +64,23 @@ const mobileUsers = new Chart(document.getElementById("mobileUsers"), {
       position: "right",
       padding: 10,
     },
+  }
+});
+
+$(document).ready(function(){
+  $("#x-button").click(function(){
+    $(".alert").slideUp("slow");
+  });
+});
+
+$("#massage-user").after($("<div></div>").text("user isn’t selected or message field is empty").addClass("negative"));
+$("#massage-user").after($("<div></div>").text("your form has been submitted").addClass("positive"));
+
+$("#submit").click(function() {
+  if ($(".user-search").val() && $(".user-message").val()) {
+    $(".positive").slideDown("slow").delay(2000).slideUp("slow");
+  }
+  else {
+    $(".negative").slideDown("slow").delay(2000).slideUp("slow");
   }
 });
